@@ -57,7 +57,7 @@ app.get('/',(req, res) => {
     res.send(testimonials)
 });
 
-//get 1 project
+//get 1 testimonial
 app.get('/:id',(req, res) => {
     const testimonial = testimonials.find((testimonial) => testimonial.id == req.params.id);
     if(!testimonial)res.status(404).send({msg: 'testimonial not found'});
@@ -81,7 +81,7 @@ app.post('/',(req, res)=>{
     res.send(new_testimonial);
     });
 
-    //update a project (update item in array)
+    //update a testimonial (update item in array)
 app.put('/:id',(req, res)=>{
     let testimonial = testimonials.findIndex((testimonial)=> testimonial.id==req.params.id);
     if(!testimonial) res.status(404).send({msg: 'testimonial not found'});
