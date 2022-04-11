@@ -9,40 +9,26 @@ let Projects = [
         github: "https://github.com/SindileM/Prject-1",
         netlify: "https://persona-websit.netlify.app",
     },
-    { 
+   { 
         id:2,
-        img_url: "https://i.postimg.cc/0rRBNbPx/Cindys-Beauty-Salon.png",
-        title: "Beauty Salon Website",
-        github: "",
-        netlify: "",
+        img_url: "https://i.postimg.cc/bv1Cg8Qj/POS.jpg",
+        title: "Point of Sale",
+        github: "https://github.com/SindileM/pos-store",
+        netlify: "https://pos-store.netlify.app/",
     },
     { 
         id:3,
-        img_url: "https://i.postimg.cc/bJdyxFbr/Screenshot-Cards.png",
-        title: "HTML & CSS cards",
-        github: "",
-        netlify: "",
+        img_url: "https://i.postimg.cc/HkxyYtSc/Calculator.jpg",
+        title: "Calculator",
+        github: "https://github.com/SindileM/Vue-calc",
+        netlify: "https://awesome-euler-92000d.netlify.app",
     },
     { 
         id:4,
-        img_url: "https://i.postimg.cc/2j4fMZY2/POS.png",
-        title: "Point of Sale",
-        github: "https://github.com/SindileM/pos",
-        netlify: "https://clever-yonath-34b555.netlify.app",
-    },
-    { 
-        id:5,
-        img_url: "",
-        title: "Calculator",
-        github: "",
-        netlify: "",
-    },
-    { 
-        id:6,
-        img_url: "",
-        title: "",
-        github: "",
-        netlify: "",
+        img_url: "https://i.postimg.cc/0yD3r8Mw/BTS-ARMY-BLOG.jpg",
+        title: "BTS Army Blog",
+        github: "https://github.com/SindileM/bts_frontend",
+        netlify: "https://bts-army-blog.netlify.app",
     }
 ];
 
@@ -93,5 +79,5 @@ fixArrayId(Projects);
 res.send({msg:'item removed'});
 });
 
-module.exports=app
+module.exports=app.fixArray
 
