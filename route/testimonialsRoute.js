@@ -77,7 +77,7 @@ app.post('/',(req, res)=>{
         text,
         email,
     };
-    testimonial.push(new_testimonial);
+    testimonials.push(new_testimonial);
     res.send(new_testimonial);
     });
 
